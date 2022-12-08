@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coble X Diner</title>
+    <meta name = "description" content = "Your local Salina, Kansas internet cafe. Great food, Great Service, Great tech, Excellent Service." />
+    <meta name = "keywords" content = "internet cafe, diner, Salina, Kansas, 67401, restaurant, computer services">
+    <link rel = "stylesheet" href="main.css">
+</head>
+<body>
+    <div class = "site-container">
+        <div class = "header-wrapper">
+            <div class ="logo">
+                <img src = "holder">
+            </div>
+            <div class = "cafe-name">
+                Coble X Internet Cafe
+            </div>
+            <div class = "become-member-btn">
+                Become a Member!
+            </div>
+        </div>
+        <div class = "content-wrapper">
+            <div class = "your-server-column">
+                <div class = "your-server-dialogue">
+                    <span id = "server-msg-box"></span>
+                </div>
+            </div>
+            <div class = "menu-wrapper">
+                <div class = "menu-tabs">
+                    <div class = "tab about-us" onclick="setMenuState('aboutus')">
+                        About Us!
+                    </div>
+                    <div class = "tab breakfast" onclick="setMenuState('breakfast')">
+                        Boot-up Breakfast
+                    </div>
+                    <div class = "tab lunch" onclick="setMenuState('lunch')">
+                        Loading Lunch
+                    </div>
+                    <div class = "tab dinner" onclick="setMenuState('dinner')">
+                        Defragging Dinner
+                    </div>
+                </div>
+                <div class = "menu-window">
+                    <div class = "menu-display">
+                        <div class = "menu-title"></div>
+                        <div class = "menu-category-wrapper">
+                            <div class = "menu-description">
+                                <div class = "menu-header menu-description-header"></div>
+                                <div class = "menu-list menu-description-list"></div>
+                            </div>
+                            <div class = "specials-wrapper">
+                                <div class = "menu-header specials-header"></div>
+                                <div class = 'selectionDescription specials-description'></div>
+                                <div class = "menu-list specials-list">
+                                    <div class = "specials-item-1">
+                                        <div class = "title" ></div>
+                                        <div class = "price"></div>
+                                        <div class = "description"></div>
+                                        <input type = 'button' class = 'btn' value = 'Purchase' onclick="purchase('spec1')">
+                                    </div>
+                                    <div class = "specials-item-2">
+                                        <div class = "title" ></div>
+                                        <div class = "price"></div>
+                                        <div class = "description"></div>
+                                        <input type = 'button' class = 'btn' value = 'Purchase' onclick="purchase('spec2')">
+                                    </div>
+                                    <div class = "specials-item-3">
+                                        <div class = "title" ></div>
+                                        <div class = "price"></div>
+                                        <div class = "description"></div>
+                                        <input type = 'button' class = 'btn' value = 'Purchase' onclick="purchase('spec3')">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "sides-wrapper">
+                                <div class = "menu-header sides-header"></div>
+                                <div class = "selectionDescription sides-description"></div>
+                                <div class = "menu-list sides-list">
+                                    <div class = "sides-item-1">
+                                        <div class = "title" ></div>
+                                        <div class = "price"></div>
+                                        <div class = "description"></div>
+                                        <input type = 'button' class = 'btn' value = 'Purchase' onclick="purchase('side1')">
+                                    </div>
+                                    <div class = "sides-item-2">
+                                        <div class = "title" ></div>
+                                        <div class = "price"></div>
+                                        <div class = "description"></div>
+                                        <input type = 'button' class = 'btn' value = 'Purchase' onclick="purchase('side2')">
+                                    </div>
+                                    <div class = "sides-item-3">
+                                        <div class = "title" ></div>
+                                        <div class = "price"></div>
+                                        <div class = "description"></div>
+                                        <input type = 'button' class = 'btn' value = 'Purchase' onclick="purchase('side3')">
+                                    </div>
+                                    <div class = "sides-item-4">
+                                        <div class = "title" ></div>
+                                        <div class = "price"></div>
+                                        <div class = "description"></div>
+                                        <input type = 'button' class = 'btn' value = 'Purchase' onclick="purchase('side4')">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class = "beverages-wrapper">
+                                <div class = "menu-header beverages-header"></div>
+                                <div class = "selectiondescription beverages-description"></div>
+                                <div class = "menu-list beverages-list">
+                                    <div class = "bev-item-1 menu-block">
+                                        <div class = "title"></div>
+                                        <div class = "price"></div>
+                                        <div class = "description"></div>
+                                        <input type = 'button' class = 'btn' value = 'Purchase' onclick="purchase('bev1')">
+                                    </div>
+                                    <div class = "bev-item-2 menu-block">
+                                        <div class = "title"></div>
+                                        <div class = "price"></div>
+                                        <div class = "description"></div>
+                                        <input type = 'button' class = 'btn' value = 'Purchase' onclick="purchase('bev2')">
+                                    </div>
+                                    <div class = "bev-item-3 menu-block">
+                                        <div class = "title"></div>
+                                        <div class = "price"></div>
+                                        <div class = "description"></div>
+                                        <input type = 'button' class = 'btn' value = 'Purchase' onclick="purchase('bev3')">
+                                    </div>
+                                    <div class = "bev-item-4 menu-block">
+                                        <div class = "title"></div>
+                                        <div class = "price"></div>
+                                        <div class = "description"></div>
+                                        <input type = 'button' class = 'btn' value = 'Purchase' onclick="purchase('bev4')">
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+                <div class = "your-cart-wrapper">
+                    <div class = "cart-title">
+                        Your Cart
+                    </div>
+                    <div class = "your-cart">
+                    </div>
+                    <div class = "total-payment">
+                        <div class = "payment-header">
+                            Total ==
+                        </div>
+                        <div class = "payment-amount" id = "total-payment">
+                        </div>
+                    </div>
+                    <div class = "cart-btns">
+                        <input type = "button" id = "clear-brn" class = "btn" value = "Clear Order" onclick = "clearOrder()">
+                        <input type = "button" id = "checkout-btn" class = "btn" value = "Checkout" onclick = "checkOut()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "footer-wrapper">
+            <div class = "sponsored-by">
+                This cafe sponsored by Coble X Development!
+            </div>
+            <div class = "helper"></div>
+            <div class = "copyright">
+                (Copyright sign)Chase Coble. All rights reserved.
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/script.js"></script>
+    <script> window.onload = setMenuState('aboutus');</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/*Make tab bottom border and shadow box fade out when selected*/
+.site-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.site-container .header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+.site-container .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+.content-wrapper .your-server-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    margin: 20px;
+}
+
+.content-wrapper .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 100%;
+}
+.menu-wrapper .menu-tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+.menu-window{}
+.menu-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-display .menu-title{
+    justify-content: center;
+    align-items: center;
+}
+.menu-display .menu-category-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.menu-category-wrapper .menu-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+.menu-category-wrapper .specials-wrapper{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+.menu-category-wrapper .sides-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+.menu-category-wrapper .beverages-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+.your-cart-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20 vw;
+    height: 100%;   
+}
+.total-payment{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.cart-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+.footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+.tab{
+    padding: 5px;
+}
+.invisible{
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+.your-cart{
+    display: flex;
+    flex-direction: column;
+}
+.menu-list{
